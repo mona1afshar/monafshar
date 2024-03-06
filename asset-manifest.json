@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/monafshar/static/css/main.bfe57e05.css",
+    "main.js": "/monafshar/static/js/main.bf3b3f71.js",
+    "static/media/trafficLights.mp4": "/monafshar/static/media/trafficLights.6b2b1f7d26fc49cbab97.mp4",
+    "static/media/sumotbotVideo.mp4": "/monafshar/static/media/sumotbotVideo.043d2539fa1fcc458f6f.mp4",
+    "static/media/KelptheOceansProject.png": "/monafshar/static/media/KelptheOceansProject.55d56ae84f8c757b80a4.png",
+    "static/media/caaamelbot.png": "/monafshar/static/media/caaamelbot.6c48a0b92e20f5367689.png",
+    "static/media/waterTrackers.PNG": "/monafshar/static/media/waterTrackers.f97623bd1d4f665af0e4.PNG",
+    "static/media/privasee.png": "/monafshar/static/media/privasee.a9d2ed5866faa55dc729.png",
+    "static/media/vacfo.png": "/monafshar/static/media/vacfo.16e932c1882b464bda3d.png",
+    "static/media/mentalevolution.png": "/monafshar/static/media/mentalevolution.1b8dcb218dfe3908f7c4.png",
+    "static/media/harrypotter.png": "/monafshar/static/media/harrypotter.34990e217c6068a67825.png",
+    "static/media/wholenewworld.png": "/monafshar/static/media/wholenewworld.e1fb778849853d6a4cff.png",
+    "static/media/imMona.JPG": "/monafshar/static/media/imMona.6068d1a63538476fb011.JPG",
+    "static/media/mathWebsite.png": "/monafshar/static/media/mathWebsite.8b6e86886a744afaf617.png",
+    "static/media/logo.png": "/monafshar/static/media/logo.baf415b1e61ff92d09fa.png",
+    "index.html": "/monafshar/index.html",
+    "main.bfe57e05.css.map": "/monafshar/static/css/main.bfe57e05.css.map",
+    "main.bf3b3f71.js.map": "/monafshar/static/js/main.bf3b3f71.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bfe57e05.css",
+    "static/js/main.bf3b3f71.js"
+  ]
+}
