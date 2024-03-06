@@ -1,0 +1,34 @@
+.footer {
+    background-color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-icons {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-icon {
+    width: 50px;
+    padding-right: 10px;
+    transition: transform 0.3s ease; 
+  }
+  
+  .footer-icon:hover {
+    animation: bounce 0.5s infinite alternate; 
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  .footer-text{
+    text-align: center;
+    padding: 0 0 0 0;
+  }

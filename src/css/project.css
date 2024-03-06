@@ -1,0 +1,19 @@
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+.project-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-container{
+  padding-top: 5%;
+  
+}
+
+.content {
+  flex: 1; /* Take up remaining space */
+  padding-right: 2rem;
+}
+
+

@@ -1,0 +1,77 @@
+/* src/Intro.css */
+
+.Intro {
+
+  text-align: center;
+  background-color: white;
+}
+
+.container {
+  padding-top: 10%;
+}
+nav {
+  background-color: white;
+  color: white;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 1%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  cursor: pointer;
+  color: #000000;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+
+main {
+  margin: 20px;
+}
+
+img {
+  max-width: 15%;
+  height: auto;
+}
+
+h1 {
+  font-size: 35px;
+  color: #000000;
+  text-align: center;
+  font-family:"Source Sans Pro", Helvetica, sans-serif;
+}
+
+h3 {
+  font-size: 50px;
+  color: #000000;
+  text-align: center;
+  font-family:"Source Sans Pro", Helvetica, sans-serif;
+}
+
+p{
+  padding-left: 3%;
+  text-align:left;
+}
+
+.button {
+  background-color: #647457; 
+  border-radius: 5px;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-top: 50px;
+  font-variant-caps: all-small-caps;
+  font-weight:bold;
+}
+
+a:hover {
+  color: #000000;
+}
