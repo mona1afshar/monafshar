@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/monafshar/static/css/main.bfe57e05.css",
-    "main.js": "/monafshar/static/js/main.bf3b3f71.js",
+    "main.css": "/monafshar/static/css/main.c1cbcc1d.css",
+    "main.js": "/monafshar/static/js/main.5e6f4ff0.js",
     "static/media/trafficLights.mp4": "/monafshar/static/media/trafficLights.6b2b1f7d26fc49cbab97.mp4",
     "static/media/sumotbotVideo.mp4": "/monafshar/static/media/sumotbotVideo.043d2539fa1fcc458f6f.mp4",
     "static/media/KelptheOceansProject.png": "/monafshar/static/media/KelptheOceansProject.55d56ae84f8c757b80a4.png",
@@ -14,13 +14,12 @@
     "static/media/wholenewworld.png": "/monafshar/static/media/wholenewworld.e1fb778849853d6a4cff.png",
     "static/media/imMona.JPG": "/monafshar/static/media/imMona.6068d1a63538476fb011.JPG",
     "static/media/mathWebsite.png": "/monafshar/static/media/mathWebsite.8b6e86886a744afaf617.png",
-    "static/media/logo.png": "/monafshar/static/media/logo.baf415b1e61ff92d09fa.png",
     "index.html": "/monafshar/index.html",
-    "main.bfe57e05.css.map": "/monafshar/static/css/main.bfe57e05.css.map",
-    "main.bf3b3f71.js.map": "/monafshar/static/js/main.bf3b3f71.js.map"
+    "main.c1cbcc1d.css.map": "/monafshar/static/css/main.c1cbcc1d.css.map",
+    "main.5e6f4ff0.js.map": "/monafshar/static/js/main.5e6f4ff0.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfe57e05.css",
-    "static/js/main.bf3b3f71.js"
+    "static/css/main.c1cbcc1d.css",
+    "static/js/main.5e6f4ff0.js"
   ]
 }
