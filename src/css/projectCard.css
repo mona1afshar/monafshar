@@ -23,7 +23,7 @@
 .project-name {
   color: black;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 25px;
   margin: 0; /* Reset margin */
   padding: 0; /* Reset padding */
   text-align: left;
@@ -45,7 +45,7 @@
 
 .github-link {
   display: inline-block; 
-  color: rgb(64, 63, 63); 
+  color: rgb(0, 0, 0); 
   font-weight: bold; 
   text-decoration: none;
   font-size: 15px;
@@ -56,9 +56,9 @@
 }
 
 .github-logo {
-  width: 15px; 
-  vertical-align: baseline; /* Adjust as needed */
-  padding-right: 3px;
+  width: 12px; 
+  vertical-align:baseline;
+  padding-right: 6px;
   transition: transform 0.3s ease; 
 }
 
