@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/monafshar/static/css/main.a10aaafa.css",
-    "main.js": "/monafshar/static/js/main.048db0a7.js",
+    "main.js": "/monafshar/static/js/main.d5cb6b6a.js",
     "static/media/trafficLights.mp4": "/monafshar/static/media/trafficLights.6b2b1f7d26fc49cbab97.mp4",
     "static/media/sumotbotVideo.mp4": "/monafshar/static/media/sumotbotVideo.043d2539fa1fcc458f6f.mp4",
     "static/media/KelptheOceansProject.png": "/monafshar/static/media/KelptheOceansProject.55d56ae84f8c757b80a4.png",
@@ -18,10 +18,10 @@
     "static/media/mathWebsite.png": "/monafshar/static/media/mathWebsite.8b6e86886a744afaf617.png",
     "index.html": "/monafshar/index.html",
     "main.a10aaafa.css.map": "/monafshar/static/css/main.a10aaafa.css.map",
-    "main.048db0a7.js.map": "/monafshar/static/js/main.048db0a7.js.map"
+    "main.d5cb6b6a.js.map": "/monafshar/static/js/main.d5cb6b6a.js.map"
   },
   "entrypoints": [
     "static/css/main.a10aaafa.css",
-    "static/js/main.048db0a7.js"
+    "static/js/main.d5cb6b6a.js"
   ]
 }
