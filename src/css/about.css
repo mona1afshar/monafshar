@@ -19,15 +19,15 @@
 }
 
 .content {
-  flex: 1; /* Take up remaining space */
+  flex: 1; 
   padding-right: 2rem;
 }
 
 .image-wrapper {
-  flex: 1; /* Take up remaining space */
+  flex: 1; 
   display: flex;
   justify-content: center;
-  align-items: center; /* Vertically center the image */
+  align-items: center; 
   overflow: hidden;
 }
 
