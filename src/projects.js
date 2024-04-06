@@ -122,7 +122,7 @@ const Project = () => {
                         mediaSrc={kelp}
                         mediaType="image"
                         name="Kelp the Oceans"
-                        description=" This project consists of a device that plants Kelp simultaneously while a boat is travelling in the water. Kelp is an algae that aids in lowering the acidity in our oceans, which means planting it could help aid in restoring lost marine ecosystems."
+                        description=" This project consists of a device that plants kelp simultaneously while a boat is travelling in the water. Kelp is an algae that aids in lowering the acidity in our oceans, which means planting it could help aid in restoring lost marine ecosystems."
                     />
                     <ProjectCard
                         mediaSrc={watertracker}
