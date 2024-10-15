@@ -24,7 +24,7 @@ const Menu = ({ isOpen, onClose }) => {
                 <a href="#projects" onClick={handleLinkClick} >Projects</a> {/* Link to the "projects" section */}
               </li>
               <li>
-                <a href="https://drive.google.com/file/d/1xvrwgcVffAtJHPpG5YPSWb6k3twikOpx/view?usp=sharing" target="_blank" rel="noreferrer">Resume </a> {/* Link to the "resume" section */}
+                <a href="https://drive.google.com/file/d/1V0UZ1L5vDGMEdCtBj4XPvHhsAljUoR2a/view?usp=sharing" target="_blank" rel="noreferrer">Resume </a> {/* Link to the "resume" section */}
               </li>
             </ul>
           </div>
