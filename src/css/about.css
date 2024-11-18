@@ -1,7 +1,10 @@
+.container {
+  padding-top: 10%;
+}
 .about-section {
   width: 70%;
   margin: 0 auto;
-  margin-top: 20%;
+  margin-top: 30%;
   display: flex;
   justify-content: center;
   text-align: center;

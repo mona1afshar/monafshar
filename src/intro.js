@@ -9,17 +9,18 @@ function Intro() {
   return (
     <div className="Intro">
       <Navbar/>
-      <div className="container">
+      <div className="centered-content">
       <main>
         <h3>{text}</h3>
         <h2>Systems Design Engineering Student @UWaterloo</h2>
       </main>
-      </div>
+      
             <a
               className="button"
               href="https://www.linkedin.com/in/mona1afshar/" target="_blank" rel="noreferrer">
               Connect with me
             </a>
+            </div>
     </div>
   );
 }

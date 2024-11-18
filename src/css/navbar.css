@@ -1,42 +1,62 @@
-/* Navbar.css */
+/* Default Navbar for Desktop */
 .navbar {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    padding-top: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.logo {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background: rgba(255, 255, 255, 0.3); /* Light green tint */
+    backdrop-filter: blur(10px); /* Adds blur effect */
+    border-radius: 0; /* Remove border radius to fit the full screen width */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
     display: flex;
+    justify-content: flex-end; /* Align items to the right */
     align-items: center;
-    margin-left: 10px;
+    box-sizing: border-box;
+    color: #000000;
+    height: 10%; /* Navbar height as a percentage of viewport */
 }
 
+/* Ensure logo is aligned */
+.logo {
+    position: fixed; /* Fix the logo in the top-left corner */
+    top: 0%; /* Adjust the top spacing */
+    left: 2%; /* Adjust the left spacing */
+    z-index: 1001; /* Ensure it stays on top of other elements */
+    height: 100%; /* Ensure logo scales with navbar height */
+}
+
+/* Make the image responsive based on the logo container height */
 .logo img {
-    width: 200px;
-    height: auto;
+    height: 100%; /* Scale the image height to fit the container */
+    width: auto; /* Maintain aspect ratio */
 }
 
 .menu-icon {
     cursor: pointer;
-    padding: 10px;
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
+    position: fixed; /* Fix the hamburger to the top-right */
+    top: 30px; /* Adjust the top spacing */
+    right: 20px; /* Adjust the right spacing */
+    z-index: 1001; /* Ensure it stays on top of other elements */
+    vertical-align: middle;
+    width: 4vh; /* Use viewport height to scale with the navbar height */
+    height: 5vh; /* Adjust the height proportionally */
+}
 
+/* Hamburger menu bar */
 .hamburger {
-    width: 25px;
+    width: 100%; /* Ensure it scales with the icon size */
     height: 3px;
     background-color: #000000;
-    margin: 30px 0;
+    margin: 6px 0;
     position: relative;
 }
 
+/* Before and after bars for hamburger animation */
 .hamburger::before,
 .hamburger::after {
     content: '';
@@ -46,22 +66,148 @@
     background-color: #000000;
     position: absolute;
     transition: all 0.3s ease;
-    /* Add transition for smooth animation */
 }
 
+/* Positioning of the top and bottom bars in hamburger */
 .hamburger::before {
     top: -8px;
 }
 
 .hamburger::after {
     bottom: -8px;
-    /* Use bottom instead of top */
 }
 
+/* When the menu is open, animate the hamburger */
 .open::before {
     transform: translateY(8px) rotate(45deg);
 }
 
 .open::after {
     transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Menu options that will slide into the navbar */
+.navbar .menu-options {
+    display: flex;
+    gap: 20px;
+    margin-right: -500px; /* Initially hide the menu options off to the right */
+    transition: margin-right 0.3s ease;
+}
+
+/* Show the menu options when the hamburger is clicked */
+.navbar.open .menu-options {
+    margin-right: 5%; /* Slide the options into the navbar */
+}
+
+/* Styling for the menu options */
+.menu-options a {
+    list-style-type: none;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Kaisei HarunoUmi' !important;
+    font-weight: bold !important;
+    color: #000000 !important;
+}
+
+/* Optional: Hover effect for menu items */
+.menu-options a:hover {
+    color: #ffffff !important;
+}
+
+/* Menu options that slide out from the hamburger */
+.popup-menu {
+    position: absolute;
+    top: 40px; /* Position it below the hamburger icon */
+    right: 0;
+    width: 200px; /* Width of the menu */
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    transform: translateY(-20px); /* Initially hidden */
+    transition: transform 0.3s ease;
+}
+
+/* Show the menu when it is active */
+.popup-menu.open {
+    transform: translateY(-20px); /* Slide out the menu */
+}
+
+/* Styling for links in the popup menu */
+.popup-menu ul {
+    list-style-type: none;
+    padding: 10px;
+    margin: 0;
+    color: black;
+}
+
+.popup-menu ul a {
+    color: #000000;
+}
+
+.popup-menu ul a:hover {
+    color: #01822e;
+}
+
+
+/* Mobile Specific Styles */
+@media screen and (max-width: 768px) {
+    /* Navbar layout changes for mobile */
+    .navbar {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    /* Initially hide the menu options */
+    .navbar .menu-options {
+        display: none;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    /* Hamburger menu (fixed on the top right) */
+    .menu-icon {
+        top: 30px;
+        right: 20px;
+    }
+
+    /* Popup menu that slides down from the top */
+    .popup-menu {
+        position: absolute;
+        top: 0; /* Align it to the top of the screen */
+        right: 0;
+        width: auto; /* Adjust to content width */
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.3); /* Same transparent background as navbar */
+        backdrop-filter: blur(10px); /* Apply the blur effect */
+        z-index: 1000;
+        transition: transform 0.3s ease; /* Smooth transition for sliding */
+        transform: translateY(-100%); /* Initially hidden above the viewport */
+        box-sizing: border-box;
+    }
+
+    /* Show the menu when it is active */
+    .navbar.open .popup-menu {
+        transform: translateY(0); /* Slide the menu down */
+    }
+
+    /* Styling for links in the popup menu */
+    .popup-menu ul {
+        list-style-type: none;
+        padding: 10px;
+        margin: 0;
+        color: black;
+    }
+
+    .popup-menu ul li {
+        color: #000000;
+        font-size: 20px;
+        padding: 10px 0;
+        cursor: pointer;
+    }
+
+    .popup-menu ul li:hover {
+        color: #01822e;
+    }
 }

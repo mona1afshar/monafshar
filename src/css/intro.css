@@ -1,77 +1,132 @@
-/* src/Intro.css */
-
 .Intro {
-
-  text-align: center;
-  background-color: white;
-}
-
-.container {
-  padding-top: 10%;
-}
-nav {
-  background-color: white;
-  color: white;
-  padding: 10px;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 1%;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url('/Users/mona1afshar/Documents/monafshar/src/images/tropical.JPG') no-repeat center center fixed;
+  background-size: cover; /* Ensures the background covers the screen */
+  min-height: 100vh; /* Make sure it takes the full viewport height */
+  width: 100%;
+  position: relative; /* Ensures elements are positioned correctly */
+  overflow: hidden; /* Prevents content overflow */
 }
 
-nav li {
-  cursor: pointer;
-  color: #000000;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-weight: bold;
+/* Centered content with a blurred, semi-transparent background */
+.centered-content {
+  background: rgba(255, 255, 255, 0.6); /* Lighter semi-transparent background */
+  backdrop-filter: blur(10px); /* Adds blur effect */
+  border-radius: 10px;
+  padding: 40px;
+  max-width: 600px; /* Prevents content from growing too wide */
+  width: 90%; /* Ensures it scales with screen size */
+  box-sizing: border-box;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  margin: 0 auto; /* Centers the content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-main {
-  margin: 20px;
-}
-
-img {
-  max-width: 15%;
-  height: auto;
-}
-
+/* Styling for heading, text, and button */
 h1 {
   font-size: 35px;
   color: #000000;
-  text-align: center;
-  font-family:"Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  margin: 10px 0;
 }
 
 h3 {
-  font-size: 50px;
+  font-size: 28px;
   color: #000000;
-  text-align: center;
-  font-family:"Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  margin: 10px 0;
 }
 
-p{
-  padding-left: 3%;
-  text-align:left;
+p {
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .button {
-  background-color: #647457; 
+  background-color: #647457;
   border-radius: 5px;
   border: none;
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 20px;
-  margin-top: 50px;
   font-variant-caps: all-small-caps;
-  font-weight:bold;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+  display: inline-block;
 }
 
-a:hover {
-  color: #000000;
+.button:hover {
+  background-color: #54694a;
+}
+
+/* Media Query for Small Screens (Mobile Devices) */
+@media (max-width: 768px) {
+  .Intro {
+    background-size: cover; /* Ensure the background image scales correctly */
+    background-position: center center; /* Keep the image centered */
+    background-attachment: scroll; /* Make background scrollable on mobile */
+  }
+
+  /* Centered content adjustments for mobile */
+  .centered-content {
+    padding: 20px; /* Reduced padding for smaller screens */
+    width: 80%; /* Slightly reduce width */
+    max-width: none; /* Allow full use of screen width */
+  }
+
+  h1 {
+    font-size: 28px; /* Adjust font size for smaller screens */
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px; /* Adjust paragraph font size */
+  }
+
+  .button {
+    font-size: 18px; /* Make button font smaller */
+  }
+}
+
+/* Media Query for Very Small Screens (Portrait Mobile) */
+@media (max-width: 480px) {
+  .Intro {
+    background-size: cover; /* Make sure the background scales to fit */
+    background-position: center center; /* Center background on very small screens */
+  }
+
+  .centered-content {
+    padding: 15px; /* Further reduce padding for tiny screens */
+    width: 90%; /* Ensure it uses most of the screen */
+  }
+
+  h1 {
+    font-size: 24px; /* Further reduce font size */
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px; /* Smaller text for tiny screens */
+  }
+
+  .button {
+    font-size: 16px; /* Adjust button size for very small screens */
+    padding: 12px 24px;
+  }
 }
