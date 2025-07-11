@@ -1,5 +1,5 @@
 .project-card {
-  width: 70%;
+  width: 85%;
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 16px;
@@ -43,6 +43,18 @@
   margin-top: 5px; /* Adjust as needed */
 }
 
+.github-icon {
+  font-size: 22px;
+  margin-right: 8px;
+  vertical-align: middle;
+  color: #333; /* or your theme color */
+  transition: color 0.3s ease;
+}
+
+.github-link:hover .github-icon {
+  color: #44624a; /* match your brand green */
+}
+
 .github-link {
   display: inline-block; 
   color: rgb(0, 0, 0); 
@@ -56,22 +68,6 @@
   }
 }
 
-.github-logo {
-  width: 12px; 
-  vertical-align:baseline;
-  padding-right: 6px;
-  transition: transform 0.3s ease; 
-}
-
 .github-link:hover .github-logo {
   animation: bounce 0.5s infinite alternate; 
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-5px);
-  }
 }

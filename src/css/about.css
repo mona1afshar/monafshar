@@ -1,49 +1,127 @@
-.about-section {
-  width: 70%;
-  margin: 0 auto;
-  margin-top: 20%;
+.about {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 2rem; 
+  box-sizing: border-box;
+  position: relative;
+}
+
+.about-section {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 16px;
-  margin: 2px auto; /* Center horizontally */
+  padding: 2rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
   transition: box-shadow 0.3s ease;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: left;
+    width: 90%; /* Make it wider on smaller screens */
+  }
 
-  /* Hover effect */
-  &:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  .about-content {
+    padding: 1rem 0;
   }
 }
 
-.content {
-  flex: 1; 
-  padding-right: 2rem;
+@media screen and (max-width: 480px) {
+  .about-section {
+    width: 100%;
+    padding: 1rem; /* reduce inner padding on small screens */
+  }
+
+  .about-content {
+    padding: 0; /* remove extra inner padding from content */
+  }
+}
+
+.about-section:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about-content {
+  flex: 1;
+  padding: 1rem 0rem;
+}
+
+.about-content h2 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .image-wrapper {
-  flex: 1; 
+  flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   overflow: hidden;
 }
 
 .image-wrapper img {
-  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  max-width: 100%;
   filter: drop-shadow(10px 10px 6px black);
-  object-fit: cover; /* Use object-fit: cover; to maintain aspect ratio */
+  object-fit: cover;
 }
 
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: #44624a;
+  text-decoration: none;
+  animation: bounce 2s infinite;
+  z-index: 10;
+}
 @media screen and (max-width: 768px) {
-  .about-section {
-    flex-direction: column; /* Change to column layout on smaller screens */
-    text-align: left; /* Align text to left on smaller screens */
+  .scroll-down {
+    display: none;
   }
+}
 
-  .content {
-    padding-right: 0; /* Remove right padding on smaller screens */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
   }
+  50% {
+    transform: translateX(-50%) translateY(8px);
+  }
+}
+
+.green-circle {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #44624a;
+  border-radius: 50%;
+  z-index: 99;
+  pointer-events: none;
+}
+
+.matcha-button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #44624a;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.matcha-button:hover {
+  background-color: #74a17d;
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 import "./css/projectCard.css";
-import githubLogo from "./images/github.png"; 
-
+import { FaGithub } from 'react-icons/fa'; // Import GitHub icon
 
 const ProjectCard = ({ mediaSrc, mediaType, name, websiteLinkURL, description, link, linkURL }) => {
   return (
@@ -18,14 +17,16 @@ const ProjectCard = ({ mediaSrc, mediaType, name, websiteLinkURL, description, l
       ) : (
         <div>Unsupported media type</div>
       )}
+
       <a className="project-name" href={websiteLinkURL} target="_blank" rel="noreferrer">{name}</a>
       <p className="project-description">{description}</p>
+
       <a className="github-link" href={linkURL} target="_blank" rel="noreferrer">
-        <img src={githubLogo} alt="GitHub Logo" className="github-logo" />
+        <FaGithub className="github-icon" />
         {link}
       </a>
     </div>
   );
-}
+};
 
 export default ProjectCard;

@@ -3,6 +3,9 @@ import React from "react";
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 
+import pantrypixie from "./images/pantrypixie.png";
+import seedlink from "./images/seedlink.png";
+import antighost from "./images/antighost.png";
 import privasee from "./images/privasee.png";
 import sumobot from "./images/sumotbotVideo.mp4";
 import wholeNewWorld from "./images/wholenewworld.png";
@@ -21,18 +24,43 @@ import ProjectCard from './projectCard.js';
 
 const Project = () => {
     return (
+        <div className="project-section" id="projects">
         <div className="carousel-container">
-            <h1 className="title">MY PROJECTS</h1>
+            <h2 className="title">MY PROJECTS</h2>
             <div className="carousel">
-                <AliceCarousel>
-                    <ProjectCard
+            <AliceCarousel
+            renderPrevButton={() => (
+              <button className="custom-arrow left-arrow">‹</button>
+            )}
+            renderNextButton={() => (
+              <button className="custom-arrow right-arrow">›</button>
+            )}
+            
+          >
+            <ProjectCard
                         mediaSrc={privasee}
                         mediaType="image"
                         name="PrivaSee AI"
                         websiteLinkURL= "https://mona1afshar.github.io/PrivaSee-AI/"
                         description="Using social media can be more dangerous than it seems, using this tool you can ensure you are not leaking any private information online. This AI scanner, scans photos and videos and highlights any potential information leaks such as addresses or phone numbers."
                         link="Check out the Github" 
-                        linkURL="https://drive.google.com/file/d/14PS5GFRjaDoWUk45FaA9XBBnVuydA135/view?usp=sharing"
+                        linkURL="https://github.com/mona1afshar/pantrypixie"
+                    />
+                    <ProjectCard
+                        mediaSrc={antighost}
+                        mediaType="image"
+                        name="AntiGhost"
+                        description="AntiGhost is a smart, minimalist personal relationship manager that helps users avoid unintentionally ghosting important people by syncing contacts, analyzing communication patterns, and sending timely, AI-powered reminders. Built with React Native, Firebase, and multiple APIs, it keeps relationships strong with personalized nudges and thoughtful conversation starters."
+                        link="Check out the Github" 
+                        linkURL="https://github.com/ammiellewb/spurhacks"
+                    />
+                    <ProjectCard
+                        mediaSrc={seedlink}
+                        mediaType="image"
+                        name="SeedLink"
+                        description="SeedLink is an AI-powered platform that helps users plant endangered species based on their location and environment, turning conservation into a community-driven, rewarding experience. Combining personalized seed recommendations, growth tracking, and social engagement, it empowers individuals to actively restore biodiversity beyond traditional seed banking."
+                        link="Check out the Github" 
+                        linkURL="https://github.com/vicksey/SeedLink"
                     />
                     <ProjectCard
                         mediaSrc={sumobot}
@@ -49,6 +77,14 @@ const Project = () => {
                         description="An interactive storyline game that will assist immigrant families in their challenges of moving to a new country. Our game takes players through 3 different challenges, including learning a whole new language for the first time and working hard to make money for food."
                         link="Check out the Github" 
                         linkURL="https://github.com/areuie/AWholeNewWorld"
+                    />
+                    <ProjectCard
+                        mediaSrc={pantrypixie}
+                        mediaType="image"
+                        name="Pantry Pixie"
+                        description="PantryPixie helps Canadian households reduce food waste by tracking grocery expiry dates and suggesting timely recipes. Using Python for receipt scanning and a React Native app for notifications and AI-powered recipe suggestions, it makes fighting fridge death effortless."
+                        link="Check out the Github" 
+                        linkURL="https://github.com/mona1afshar/pantrypixie"
                     />
                     <ProjectCard
                         mediaSrc={trafficlights}
@@ -132,6 +168,7 @@ const Project = () => {
                     />
                 </AliceCarousel>
             </div>
+        </div>
         </div>
     );
 }

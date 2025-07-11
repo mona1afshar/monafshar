@@ -18,13 +18,13 @@ const Menu = ({ isOpen, onClose }) => {
             <hr />
             <ul className="menu-options">
               <li>
-                <a href="#about" onClick={handleLinkClick} >About Me</a> {/* Link to the "about" section */}
+                <a href="/" onClick={handleLinkClick} >Homepage</a> 
               </li>
               <li>
-                <a href="#projects" onClick={handleLinkClick} >Projects</a> {/* Link to the "projects" section */}
+              <a href="/matcha" onClick={handleLinkClick} >Mona's Matcha</a> 
               </li>
               <li>
-                <a href="https://drive.google.com/file/d/1V0UZ1L5vDGMEdCtBj4XPvHhsAljUoR2a/view?usp=sharing" target="_blank" rel="noreferrer">Resume </a> {/* Link to the "resume" section */}
+                <a href="https://drive.google.com/file/d/1172RKK_YamwH7LAWfYTAd-pmhbMFoXiu/view?usp=sharing" target="_blank" rel="noreferrer">Resume </a> {/* Link to the "resume" section */}
               </li>
             </ul>
           </div>

@@ -1,36 +1,20 @@
-/* src/Intro.css */
 
 .Intro {
-
+  min-height: 100vh;                    
   text-align: center;
-  background-color: white;
+  background-color: #44624a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .container {
-  padding-top: 10%;
-}
-nav {
-  background-color: white;
-  color: white;
-  padding: 10px;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 1%;
-  display: flex;
-  justify-content: space-around;
-}
-
-nav li {
-  cursor: pointer;
-  color: #000000;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-weight: bold;
+  padding: 0;
 }
 
 main {
-  margin: 20px;
+  margin: 20px 0;
 }
 
 img {
@@ -38,40 +22,45 @@ img {
   height: auto;
 }
 
-h1 {
-  font-size: 35px;
-  color: #000000;
-  text-align: center;
-  font-family:"Source Sans Pro", Helvetica, sans-serif;
+h1, h3 {
+  color: #f1ebe1
 }
 
-h3 {
-  font-size: 50px;
-  color: #000000;
-  text-align: center;
-  font-family:"Source Sans Pro", Helvetica, sans-serif;
-}
-
-p{
-  padding-left: 3%;
-  text-align:left;
-}
-
-.button {
-  background-color: #647457; 
+.intro-button {
+  background-color: #f1ebe1; 
   border-radius: 5px;
   border: none;
-  color: rgb(255, 255, 255);
+  color: #44624a;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
   margin-top: 50px;
-  font-variant-caps: all-small-caps;
-  font-weight:bold;
+  font-variant-caps: all-petite-caps;
 }
 
-a:hover {
+.intro-button:hover {
   color: #000000;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  color: #ffff;
+  text-decoration: none;
+  animation: bounce 2s infinite;
+  z-index: 10;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(8px);
+  }
 }

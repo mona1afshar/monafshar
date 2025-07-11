@@ -5,63 +5,86 @@
     left: 0;
     right: 0;
     z-index: 1000;
-    padding-top: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
+    background-color: #44624a;
+    display: flex;
+    align-items: center;         
+    justify-content: space-between; 
+  
+    padding: 0 20px;
+    height: 80px;               
+  }
+
 
 .logo {
     display: flex;
     align-items: center;
-    margin-left: 10px;
 }
-
+  
 .logo img {
-    width: 200px;
-    height: auto;
+  width: 30vw;  
+  max-width: 180px; /* never exceed 180px */
+  height: auto;
+  max-height: 80px; /* never exceed 80px */
 }
 
+
+@media (max-width: 480px) {
+  .logo img {
+    width: 60 vw;
+    max-height: none;
+  }
+}
+  
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
 .menu-icon {
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
+
     position: absolute;
-    top: 0;
-    right: 0;
-  }
+    top: 25px;
+    right: 20px;
+  }  
 
-.hamburger {
-    width: 25px;
+  .hamburger {
+    width: 23px;
     height: 3px;
-    background-color: #000000;
-    margin: 30px 0;
+    background-color: #f1ebe1;
+    margin: 4px 0;
     position: relative;
-}
-
-.hamburger::before,
-.hamburger::after {
+  }
+  
+  .hamburger::before,
+  .hamburger::after {
     content: '';
     display: block;
     width: 100%;
     height: 3px;
-    background-color: #000000;
+    background-color: #f1ebe1;
     position: absolute;
     transition: all 0.3s ease;
-    /* Add transition for smooth animation */
-}
-
-.hamburger::before {
+  }
+  
+  .hamburger::before {
     top: -8px;
-}
-
-.hamburger::after {
+  }
+  
+  .hamburger::after {
     bottom: -8px;
-    /* Use bottom instead of top */
-}
-
-.open::before {
+  }
+  
+  .open::before {
     transform: translateY(8px) rotate(45deg);
-}
-
-.open::after {
+  }
+  
+  .open::after {
     transform: translateY(-8px) rotate(-45deg);
-}
+  }
+  

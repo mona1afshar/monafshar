@@ -1,0 +1,93 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 400; 
+  line-height: 1.6;
+  color: #000000;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.martel-sans-extralight {
+  font-weight: 200;
+}
+
+.martel-sans-light {
+  font-weight: 300;
+}
+
+.martel-sans-regular {
+  font-weight: 400;
+}
+
+.martel-sans-semibold {
+  font-weight: 600;
+}
+
+.martel-sans-bold {
+  font-weight: 700;
+}
+
+.martel-sans-extrabold {
+  font-weight: 800;
+}
+
+.martel-sans-black {
+  font-weight: 900;
+}
+
+/* Headings */
+h1 {
+  font-size: 60px;
+  color: #000000;
+  text-align: center;
+  font-weight: 700;
+}
+/* Headings */
+h2 {
+  font-size: 45px;
+  color: #000000;
+  text-align: center;
+  font-weight: 600;
+}
+h3 {
+  font-size: 30px;
+  color: #000000;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Responsive font sizes for smaller screens */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 50px;
+  }
+  h2 {
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+}
+
+/* Paragraphs */
+p {
+  padding-left: 3%;
+  text-align: left;
+  font-weight: 400;
+}

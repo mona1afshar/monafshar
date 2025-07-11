@@ -1,0 +1,54 @@
+
+.gallery[data-direction="left"] {
+  direction: rtl;
+}
+
+.gallery {
+  grid-column: full;
+  display: flex;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  gap: var(--space);
+  padding: 0;
+  margin: 0;
+  scrollbar-width: none;
+}
+
+.gallery .floating_content {
+  display: flex;
+  gap: var(--space);
+  padding: 0;
+  margin: 0;
+}
+
+.gallery .floating_content > * {
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  inline-size: 100%;
+  max-inline-size: 25rem;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.gallery .floating_content > *.lg {
+  max-inline-size: 25rem;
+}
+
+.gallery .floating_content > *.md {
+  max-inline-size: 20rem;
+}
+
+.gallery .floating_content > *.sm {
+  max-inline-size: 15rem;
+}
+
+.gallery .floating_content > *.xs {
+  max-inline-size: 10rem;
+}
+
+/* Remove spacing on the right side after last item */
+.gallery .floating_content::after {
+  content: "";
+  flex: 0 0 var(--space);
+}

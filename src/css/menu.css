@@ -71,3 +71,22 @@
 .menu-options a:hover {
     color: #000000;
 }
+
+nav {
+    background-color: #f1ebe1;
+    color: #f1ebe1;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 1%;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav li {
+    cursor: pointer;
+    color: #000000;
+    font-weight: bold;
+  }

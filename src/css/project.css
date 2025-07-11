@@ -1,19 +1,77 @@
 @import "react-alice-carousel/lib/alice-carousel.css";
 
 .project-section {
+  min-height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  background-color: #ffffff;
+  padding: 5rem 0;
+  box-sizing: border-box;
 }
 
-.carousel-container{
-  padding-top: 5%;
-  
+.carousel {
+  position: relative;
 }
 
-.content {
-  flex: 1; /* Take up remaining space */
-  padding-right: 2rem;
+.carousel-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
+/* === Custom Arrows (for custom render buttons) === */
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: #44624a;
+  background: none;
+  border: none;
+  z-index: 20;
+  cursor: pointer;
+  padding: 0 10px;
+  transition: all 0.3s ease;
+}
 
+.left-arrow {
+  left: -50px;
+}
+
+.right-arrow {
+  right: -50px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 767px) {
+  .project-section {
+    padding: 0.5rem 0;
+  }
+
+  .custom-arrow {
+    position: static;
+    display: inline-block;
+    transform: none;
+    margin: 1rem 10px 0 10px;
+  }
+
+  .alice-carousel__stage {
+    margin-bottom: 1rem;
+  }
+
+  .alice-carousel__prev-btn,
+  .alice-carousel__next-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}

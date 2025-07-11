@@ -1,0 +1,35 @@
+.Matcha {
+  min-height: 100vh;                    
+  text-align: center;
+  background-color: #44624a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  padding: 0;
+}
+
+.matcha-image {
+  max-height: 130vh;
+  max-width: 70%;
+  border-radius: 3px;
+  margin-bottom: 3px;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+  .matcha-image {
+    max-width: 90%;
+    max-height: 80vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .matcha-image {
+    max-width: 85%;
+    max-height: 60vh;
+  }
+}
