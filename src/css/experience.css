@@ -1,0 +1,123 @@
+.experience-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 5rem 0;
+  box-sizing: border-box;
+}
+
+
+/* Horizontal scroll */
+.exp-scroll-container {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 1rem 0;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  scrollbar-width: none;
+}
+
+.exp-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Card */
+.exp-card {
+  flex: 0 0 calc((100% - 3rem) / 3);
+  scroll-snap-align: start;
+  border: 1px solid #e8e8e8;
+  border-radius: 16px;
+  background-color: #fafafa;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease;
+  min-height: 340px;
+}
+
+.exp-card:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Header: logo left, info right */
+.exp-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.exp-logo-wrap {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.exp-logo {
+  width: 140px;
+  height: 140px;
+  max-width: none;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.exp-header-info {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+}
+
+.exp-company {
+  margin: 0;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  text-align: left;
+}
+
+.exp-role {
+  margin: 0.2rem 0 0 0;
+  font-size: 0.88rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.exp-meta {
+  margin: 0.1rem 0 0 0;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+/* Description */
+.exp-description {
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Tablet: 2 visible */
+@media screen and (max-width: 900px) {
+  .exp-card {
+    flex: 0 0 calc((100% - 1.5rem) / 2);
+  }
+}
+
+/* Mobile: 1 visible */
+@media screen and (max-width: 600px) {
+  .experience-section {
+    padding: 3rem 0;
+  }
+
+  .exp-card {
+    flex: 0 0 85%;
+  }
+}

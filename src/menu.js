@@ -26,7 +26,7 @@ const Menu = ({ isOpen, onClose }) => {
                 <Link to="/matcha" onClick={handleLinkClick}>Mona's Matcha</Link>
               </li>
               <li>
-                <a href="https://drive.google.com/file/d/1172RKK_YamwH7LAWfYTAd-pmhbMFoXiu/view?usp=sharing" target="_blank" rel="noreferrer">
+                <a href="https://drive.google.com/file/d/1rbX93O2dIMbOOcy01MC9zkDe5c2MWc-w/view?usp=sharing" target="_blank" rel="noreferrer">
                   Resume
                 </a>
               </li>

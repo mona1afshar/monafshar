@@ -8,6 +8,7 @@ import Footer from "./components/footer.js";
 import Matcha from './matcha/matcha.js';
 import Recipes from './matcha/recipes.js';
 import Cafe from './matcha/favCafes.js';
+import Experience from "./experience";
 import ScrollToTop from "./ScrolltoTop.js";
 
 const Home = () => (
@@ -18,6 +19,9 @@ const Home = () => (
         </div>
         <div id="projects">
             <Project />
+        </div>
+        <div id="experience">
+            <Experience />
         </div>
         <Footer />
     </Layout>

@@ -18,10 +18,22 @@ import lunar from "../images/matcha/lunar.png";
 import demello from "../images/matcha/demello.png"; 
 import neo from "../images/matcha/neo.jpeg"; 
 import chabar from "../images/matcha/chabar.jpeg";
+import bloom from "../images/matcha/bloom.JPG";
+import em from "../images/matcha/em.JPG";
+import edi from "../images/matcha/edi.JPG";
+import hanar from "../images/matcha/hanar.JPG";
+import lala from "../images/matcha/lala.JPG";
+import sevenShores from "../images/matcha/sevenShores.JPG";
 
 const cafes = [
   { name: "Icha Tea", location: "Toronto, ON", image: icha, rating: 5 },
+  { name: "Seven Shores", location: "Waterloo, ON", image: sevenShores, rating: 2 },
   { name: "Jenkins", location: "London, UK", image: jenkins, rating: 5 },
+  { name: "Em Coffee House", location: "San Diego, CA", image: em, rating: 5 },
+  { name: "Bloom Cafe", location: "Toronto, ON", image: bloom, rating: 3 },
+  { name: "Hanar", location: "San Diego, CA", image: hanar, rating: 5 },
+  { name: "Easy Does It", location: "San Deigo, CA", image: edi, rating: 4 },
+  { name: "Lala Bakeshop", location: "Toronto, ON", image: lala, rating: 4 },
   { name: "Matcha Matcha", location: "Toronto + Markham, ON", image: m2, rating: 4 },
   { name: "Midnight Run", location: "Waterloo, ON", image: midnightrun, rating: 1 },
   { name: "Out Of Office", location: "Markham, ON", image: OOO, rating: 4 },

@@ -3,6 +3,9 @@ import React from "react";
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 
+import babyMonitor from "./images/babyMonitor.JPG";
+import rocky from "./images/rocky.png";
+import goldenHour from "./images/goldenHour.png";
 import pantrypixie from "./images/pantrypixie.png";
 import seedlink from "./images/seedlink.png";
 import antighost from "./images/antighost.png";
@@ -26,7 +29,7 @@ const Project = () => {
     return (
         <div className="project-section" id="projects">
         <div className="carousel-container">
-            <h2 className="title">MY PROJECTS</h2>
+            <h2 className="section-title">PROJECTS</h2>
             <div className="carousel">
             <AliceCarousel
             renderPrevButton={() => (
@@ -42,9 +45,34 @@ const Project = () => {
                         mediaType="image"
                         name="PrivaSee AI"
                         websiteLinkURL= "https://mona1afshar.github.io/PrivaSee-AI/"
-                        description="Using social media can be more dangerous than it seems, using this tool you can ensure you are not leaking any private information online. This AI scanner, scans photos and videos and highlights any potential information leaks such as addresses or phone numbers."
+                        description="Winner at SheHacks 2024! This AI scanner, scans photos and videos and highlights any potential information leaks such as addresses or phone numbers, ensuring you are not leaking any sensitive information online."
                         link="Check out the Github" 
                         linkURL="https://github.com/mona1afshar/pantrypixie"
+                    />
+                    <ProjectCard
+                        mediaSrc={goldenHour}
+                        mediaType="image"
+                        name="Golden Hour"
+                        description="This React Native app will predict if it will be a colourful sunset based on the cloud coverage using weather API. It will also tell you tips on seeing the best sunset, when to go out and where to watch from in your area. "
+                        link="Check out the Github" 
+                        linkURL="https://github.com/mona1afshar/golden-hour"
+                    />
+                    <ProjectCard
+                        mediaSrc={rocky}
+                        mediaType="image"
+                        name="Rocky's POV"
+                        websiteLinkURL= "https://www.youtube.com/watch?v=tjb8rdjIeSU"
+                        description="Winner at the Google x GitCloud stupid ideas hackathon! Inspired by the movie and book Hail Mary, this is Rocky's POV of earth. This is a swift macOS app with an arduino uno board as the hardware component.  Video understanding comes from the Google Cloud Video Intelligence API, and narration is generated via OpenRouter."
+                        link="Check out the Github" 
+                        linkURL="https://github.com/mona1afshar/rockyPOV"
+                    />
+                    <ProjectCard
+                        mediaSrc={babyMonitor}
+                        mediaType="image"
+                        name="Baby Breathing Monitor"
+                        description="This baby breathing monitor attaches to the baby's mattress and uses lowpass, highpass and bandpass filters to isolate the breathing rate of a baby to inform parents if they are sleeping, crying or moving. The project is entirely built using hardware and analog systems, the lights indicate which state the baby is in."
+                        link="Check out our Calculations" 
+                        linkURL="https://docs.google.com/spreadsheets/d/1fqi_xbpyRMPk9nnD1b8SR29_JItXj_XOrb1MZupPP4Y/edit?usp=sharing"
                     />
                     <ProjectCard
                         mediaSrc={antighost}
@@ -169,6 +197,7 @@ const Project = () => {
                 </AliceCarousel>
             </div>
         </div>
+        <a href="#experience" className="scroll-down">↓</a>
         </div>
     );
 }

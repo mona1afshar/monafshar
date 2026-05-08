@@ -1,3 +1,11 @@
+.section-title {
+  font-size: 1.8rem;
+  color: #44624a;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
 html, body {
   margin: 0;
   padding: 0;
