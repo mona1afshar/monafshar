@@ -1,18 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.6a0be168.css",
-    "main.js": "/static/js/main.47793f10.js",
+    "main.css": "/static/css/main.04f8c264.css",
+    "main.js": "/static/js/main.74e8314b.js",
     "static/media/matchaVid.png": "/static/media/matchaVid.6dd9253f3540cf55bef8.png",
     "static/media/trafficLights.mp4": "/static/media/trafficLights.6b2b1f7d26fc49cbab97.mp4",
     "static/media/sumotbotVideo.mp4": "/static/media/sumotbotVideo.043d2539fa1fcc458f6f.mp4",
+    "static/media/babyMonitor.JPG": "/static/media/babyMonitor.b22caccb0e62a9cf7bbe.JPG",
+    "static/media/sevenShores.JPG": "/static/media/sevenShores.7d33bd3c65d342ead1db.JPG",
     "static/media/OOO.png": "/static/media/OOO.b1c38d02ef1edb92f4fb.png",
     "static/media/neo.jpeg": "/static/media/neo.4cee83c2a3544c1424f3.jpeg",
     "static/media/icha.png": "/static/media/icha.798ded1de26e1666e1f3.png",
     "static/media/zumi.png": "/static/media/zumi.5254eeb4c2428610fcea.png",
+    "static/media/bloom.JPG": "/static/media/bloom.3244a7f5e71c54eea2da.JPG",
+    "static/media/em.JPG": "/static/media/em.3c26cf11806c57300a01.JPG",
+    "static/media/edi.JPG": "/static/media/edi.da7130cec1ad2a3bddfd.JPG",
     "static/media/lunar.png": "/static/media/lunar.b6ef16ac01e084d25b11.png",
     "static/media/midnightrun.png": "/static/media/midnightrun.6ca6e58d326179c45ec2.png",
     "static/media/strawberry.png": "/static/media/strawberry.49da9d21e3c2ba3efe79.png",
+    "static/media/hanar.JPG": "/static/media/hanar.4deeaab01ca276225f3e.JPG",
+    "static/media/lala.JPG": "/static/media/lala.79311fa191d6fe3d5d47.JPG",
     "static/media/m2.png": "/static/media/m2.d67b4b33d3fa049c2fb3.png",
+    "static/media/rocky.png": "/static/media/rocky.70a96d4fd27b55d69d15.png",
     "static/media/qamaria.png": "/static/media/qamaria.220e55b51cc9a4ee296b.png",
     "static/media/hive.png": "/static/media/hive.fc7710616960954ad735.png",
     "static/media/classic.png": "/static/media/classic.06abe9c41b7e23a3e57b.png",
@@ -32,6 +40,7 @@
     "static/media/styleshare.png": "/static/media/styleshare.ec565b42add34cbc52a9.png",
     "static/media/pantrypixie.png": "/static/media/pantrypixie.83d0e0dc561d6e79fb8e.png",
     "static/media/vacfo.png": "/static/media/vacfo.16e932c1882b464bda3d.png",
+    "static/media/goldenHour.png": "/static/media/goldenHour.da0ae0ef087b9e1bb854.png",
     "static/media/raccoon.png": "/static/media/raccoon.04254db9933bd6f18ce1.png",
     "static/media/mentalevolution.png": "/static/media/mentalevolution.1b8dcb218dfe3908f7c4.png",
     "static/media/antighost.png": "/static/media/antighost.49574d24f5f28a2263a3.png",
@@ -39,13 +48,14 @@
     "static/media/wholenewworld.png": "/static/media/wholenewworld.e1fb778849853d6a4cff.png",
     "static/media/imMona.JPG": "/static/media/imMona.6068d1a63538476fb011.JPG",
     "static/media/mathWebsite.png": "/static/media/mathWebsite.8b6e86886a744afaf617.png",
+    "static/media/anoosh-logo.jpg": "/static/media/anoosh-logo.a855c8db4310627c1a7d.jpg",
     "static/media/logoFR.svg": "/static/media/logoFR.663c7491d9279890699a657c3c3ebd57.svg",
     "index.html": "/index.html",
-    "main.6a0be168.css.map": "/static/css/main.6a0be168.css.map",
-    "main.47793f10.js.map": "/static/js/main.47793f10.js.map"
+    "main.04f8c264.css.map": "/static/css/main.04f8c264.css.map",
+    "main.74e8314b.js.map": "/static/js/main.74e8314b.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a0be168.css",
-    "static/js/main.47793f10.js"
+    "static/css/main.04f8c264.css",
+    "static/js/main.74e8314b.js"
   ]
 }
